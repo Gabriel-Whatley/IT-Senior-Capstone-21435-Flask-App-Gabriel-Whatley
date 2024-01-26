@@ -10,7 +10,31 @@
   <body>
     {% extends "navbar.html" %}
     {% block content %}
-      <h1>Hello, world!</h1>
+      <h1>Welcome to Gabriel's Homepage</h1>
+        <p>Hello and welcome to my homepage. Since the information content of this page is not important I have provided for your enjoyment a highly educational overview of the controls of a TIG welding power supply.</p>
+        <img alt="The front panel of a TIG welder" src="../static/images/TIG_Welder.jpg" style="width:55%">
+        <ul>
+            <li>OC Light - Over Temp light, when illuminated the power supply has overheated and cannot be used until it cools off</li>
+            <li>Foot Control Light - Illuminated when a TIG foot pedal is properly connected.</li>
+            <li>AMP Display - Displays the currently selected maximum welding current level. When the supply is running shows a live view of the exact current.</li>
+            <li>TIG/MMA Switch - Choose between TIG and MMA also known as "Stick" power supply modes.</li>
+            <li>AC/DC Switch - Choose between direct current or alternating current supply modes.</li>
+            <li>AC Frequency Knob - When AC mode is selected, adjust the number of times per second the current of the AC waveform alternates between positive and negative.</li>
+            <li>AC Balance Knob - When AC mode is selected, percentage of time per cycle the AC current spends flowing towards the negative side of the circuit.
+            <li>Start Current Knob - in 2T or 4T mode determines the initial current to start the up slope.</li>
+            <li>Up Slope Knob - Sets the time taken to slope from starting current to welding current.</li>
+            <li>Welding Current Knob - Sets the main welding current for MMA and TIG modes, used as the high current when pulse is enabled.</li>
+            <li>Down Slope Knob - Sets the time taken to slope from welding current to end current.</li>
+            <li>End Current Knob - Sets the down slope target current.</li>
+            <li>2T / 4T Switch - When using a torch switch, determines if the switch is in momentary or latching mode.</li>
+            <li>Pre-Flow Knob - Determines for how many seconds shielding gas flows from the TIG torch before the start current begins.</li>
+            <li>Base Current Knob - Determines the low welding current value when pulsing is enabled.</li>
+            <li>Pulse Frequency Knob - Frequency of the pulses, value depends on the setting of the pulse mode switch.</li>
+            <li>Pulse Duty Knob - Sets the percentage of time per pulse that the welding current spends at the level set by the welding current knob.</li>
+            <li>Post Flow Knob - Determines for how many seconds shielding gas flows from the TIG torch after the welding current ends.</li>
+            <li>Pulse Mode Switch - Determines pulser mode, fast, slow, or off.</li>
+        </ul>
+        <img alt="Stick welding" src="../static/images/SMAW.jpg" style="width:55%">
     {% endblock %}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   </body>
